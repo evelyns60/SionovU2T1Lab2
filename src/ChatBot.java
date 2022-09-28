@@ -3,6 +3,9 @@ public class ChatBot {
     // instance variables
     private String name;
     private int number;
+    private int factor1 = 42;
+    private int factor2 = 13;
+
 
     // constructor
     public ChatBot(String chatBotName, int faveNum) {
@@ -39,6 +42,15 @@ public class ChatBot {
     public int addNumbers(int num1, int num2, int num3) {
         return num1 + num2 + num3;
     }
+
+    public int calculateProduct(){
+        return factor1 * factor2;
+    }
+    public void printProduct(){
+        System.out.println("The answer is " + calculateProduct());
+    }
+
+
 
     // method that RETURNS a goodbye message as a String -- note there is no printing here!
     public String goodbye() {
